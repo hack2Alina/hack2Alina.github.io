@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alina Prem | SOC Analyst & Forensic Scientist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F2F5F4; --surface:#FFFFFF; --ink:#14222B; --muted:#55666F; --line:#D5DDDB;
+  --accent:#0F6E6E; --accent-ink:#FFFFFF; --signal:#B87514;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0D1A20;--surface:#14252D;--ink:#E6EEEC;--muted:#93A5AB;--line:#264049;--accent:#4FC3B8;--accent-ink:#0D1A20;--signal:#E3A64A}
+}
+:root[data-theme="dark"]{--bg:#0D1A20;--surface:#14252D;--ink:#E6EEEC;--muted:#93A5AB;--line:#264049;--accent:#4FC3B8;--accent-ink:#0D1A20;--signal:#E3A64A}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "Instrument Sans",system-ui,sans-serif}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem}
+h1,h2,h3{font-family:Newsreader,Georgia,serif;font-weight:600;line-height:1.15;margin:0}
+nav{display:flex;flex-wrap:wrap;gap:.25rem 1.5rem;padding:1.25rem 0;font-size:.95rem}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink)}
+.hero{padding:4rem 0 4.5rem}
+.hero h1{font-size:clamp(3.2rem,11vw,7rem);letter-spacing:-.02em;line-height:.98}
+.hero p.lead{font-family:Newsreader,Georgia,serif;font-size:clamp(1.3rem,3.2vw,1.9rem);line-height:1.35;max-width:36rem;margin:1.5rem 0 2rem;color:var(--muted)}
+.hero p.lead b{color:var(--ink);font-weight:600}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.7rem 1.25rem;border-radius:6px;border:1.5px solid var(--accent);text-decoration:none;font-weight:600;font-size:.98rem}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:1.75rem}
+.about p{max-width:42rem;margin:0 0 1rem}
+/* chain: career as a sequence */
+.chain{list-style:none;margin:0;padding:0;position:relative}
+.chain::before{content:"";position:absolute;left:.45rem;top:.6rem;bottom:.6rem;width:2px;background:var(--line)}
+.chain>li{position:relative;padding:0 0 2.5rem 2.25rem}
+.chain>li::before{content:"";position:absolute;left:0;top:.5rem;width:1rem;height:1rem;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+.chain>li:first-child::before{background:var(--accent);border-color:var(--signal)}
+.role{font-size:1.4rem}
+.org{color:var(--muted);margin:.15rem 0 .9rem;font-size:.98rem}
+.chain ul{margin:0;padding-left:1.1rem;max-width:44rem}
+.chain li li{margin:.35rem 0}
+.tools{margin-top:.9rem;font-size:.92rem;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.5rem 2.5rem}
+.grid h3{font-size:1.15rem;margin-bottom:.5rem}
+.grid p{margin:0;color:var(--muted);font-size:.98rem}
+.papers{display:grid;gap:1.25rem}
+.paper{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:4px;padding:1.25rem 1.4rem}
+.paper h3{font-size:1.25rem;margin-bottom:.4rem}
+.paper .meta{font-size:.9rem;color:var(--muted);margin:0 0 .6rem}
+.paper p{margin:0;max-width:44rem}
+.certs{columns:2 16rem;column-gap:2.5rem;margin:0;padding-left:1.1rem}
+.certs li{margin:.35rem 0;break-inside:avoid}
+.edu{display:grid;gap:1.25rem}
+.edu h3{font-size:1.2rem}
+.edu p{margin:.15rem 0 0;color:var(--muted)}
+.contact p{max-width:34rem;margin:0 0 1.5rem}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <nav aria-label="Sections">
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#research">Research</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="hero">
+    <h1>Alina Prem</h1>
+    <p class="lead">SOC analyst who started as a <b>forensic scientist</b>. I read the evidence, in logs and in labs, and trace it back to what happened.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:alinaprem1011@gmail.com">Email me</a>
+      <a class="btn" href="https://linkedin.com/in/alina-prem" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/hack2Alina" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="about" class="about"><div class="wrap">
+  <h2>About</h2>
+  <p>I'm a Level 1 SOC Analyst in Abu Dhabi. My day is real-time monitoring, alert triage and incident investigation: checking whether an alert is real, working out how far it reaches, and writing it up so someone can act on it.</p>
+  <p>My background is forensic science (B.Sc. and M.Sc.), and it shapes how I work. I correlate logs across endpoints, network and user activity, and I document findings the way a case file should read: clear, sourced and reproducible. I'm certified in Ethical Hacking (CEH) and Advanced Penetration Testing, and I keep building skills through hands-on labs and CTF-style challenges.</p>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Experience</h2>
+  <ol class="chain">
+    <li>
+      <h3 class="role">SOC Analyst, Level 1</h3>
+      <p class="org">Arrownex, Abu Dhabi, UAE</p>
+      <ul>
+        <li>Monitor and analyze security events and alerts on the Seceon aiXDR platform (aiSIEM, aiXDR).</li>
+        <li>Investigate login anomalies, endpoint compromises, malware activity and potential data exfiltration.</li>
+        <li>Triage and validate alerts, and escalate incidents based on severity and impact.</li>
+        <li>Correlate logs across endpoints, network and user activity to find suspicious patterns.</li>
+        <li>Write incident reports with analysis and recommended remediation.</li>
+        <li>Work with detection rules, behavioral analytics and correlation engines to improve alert accuracy.</li>
+      </ul>
+      <p class="tools">Seceon aiXDR, SIEM, EDR, Nmap, Linux CLI, Windows Event Logs, Syslog</p>
+    </li>
+    <li>
+      <h3 class="role">Cybersecurity Intern (VAPT)</h3>
+      <p class="org">RedTeam Academy, UAE</p>
+      <ul>
+        <li>Ran web and API vulnerability assessments and penetration tests using OWASP methodology.</li>
+        <li>Tested Zero WebAppSecurity, PortSwigger API Labs and a Hack The Box machine.</li>
+        <li>Found SQL injection, authentication flaws, API misconfigurations and Linux security issues.</li>
+        <li>Built an Ubuntu SSH misconfiguration and wrote the exploitation proof of concept.</li>
+        <li>Delivered VAPT reports with risk ratings, PoC and remediation steps.</li>
+      </ul>
+      <p class="tools">Burp Suite, OWASP ZAP, SQLMap, Nmap, Linux CLI</p>
+    </li>
+    <li>
+      <h3 class="role">M.Sc. Forensic Science research</h3>
+      <p class="org">Garden City University, Bengaluru, 2022 to 2024</p>
+      <ul>
+        <li>Co-authored three peer-reviewed papers across forensic odontology, forensic psychology and cyber-behavior (see Research).</li>
+      </ul>
+    </li>
+  </ol>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div><h3>Security operations</h3><p>SIEM, log analysis, alert triage, incident response, MITRE ATT&amp;CK, threat correlation, incident reporting</p></div>
+    <div><h3>Offensive security</h3><p>Metasploit, Nmap, Hydra, OpenVAS, WPScan, Gobuster, CeWL, John the Ripper, Hashcat, Burp Suite, OWASP ZAP, SQLMap</p></div>
+    <div><h3>Monitoring and analysis</h3><p>Wazuh, Splunk, Wireshark, Seceon aiXDR, Windows Event Logs, Syslog</p></div>
+    <div><h3>Foundations</h3><p>Linux, Windows, TCP/IP, OSI model, firewalls, network devices</p></div>
+    <div><h3>Working style</h3><p>Clear reporting, communication, teamwork, adaptability</p></div>
+  </div>
+</div></section>
+
+<section id="research"><div class="wrap">
+  <h2>Research</h2>
+  <div class="papers">
+    <article class="paper">
+      <h3>Prediction of Criminal Tendencies by Social Media Usage and Personality Characteristics</h3>
+      <p class="meta">Int. J. Adv. Res. 12(10), 1653-1671, October 2024. Satheesh, Prem, K.P., Sahay</p>
+      <p>Survey of 105 young adults on Big Five traits, social media use and criminal tendencies. Personality traits, especially conscientiousness, openness and emotional stability, explained more of the variance in criminal tendencies than social media use did.</p>
+    </article>
+    <article class="paper">
+      <h3>Exploring the Prevalence of Psychological Autopsy in Indian Context</h3>
+      <p class="meta">Indian Journal of Forensic Medicine and Toxicology 18(2), April-June 2024. Prem, Satheesh, K.P., Sahay</p>
+      <p>Questionnaire study of 50 mental health professionals, forensic psychologists and academics. 84% knew the term, but 72% had never been involved in a case, and respondents called for standardized protocols and training.</p>
+    </article>
+    <article class="paper">
+      <h3>Forensic Identification of Charred Human Remains Using Dental Remnants (400-800&deg;C)</h3>
+      <p class="meta">Medico Legal Update 24(3), July-September 2024. Prem, Satheesh, K.P., Bansal</p>
+      <p>Review of over 50 sources on how heat changes enamel, dentine, pulp and dental restorations, and how dental records can still support identification of burned remains.</p>
+    </article>
+  </div>
+</div></section>
+
+<section id="credentials"><div class="wrap">
+  <h2>Certifications and education</h2>
+  <ul class="certs">
+    <li>EC-Council: Certified Ethical Hacker (CEH)</li>
+    <li>RedTeam: Advanced Penetration Tester</li>
+    <li>ISC2: Certified in Cybersecurity (CC)</li>
+    <li>REDTEAM360: Ethical Hacking Associate</li>
+    <li>EC-Council: Digital Forensic Essentials</li>
+    <li>The Tech Destiny: Cyber Security</li>
+    <li>Seceon: Q4 2025 Innovation and Certification Day</li>
+    <li>Seceon: Q2 2026 Innovation and Certification Day</li>
+  </ul>
+  <div class="edu" style="margin-top:2.25rem">
+    <div><h3>M.Sc. Forensic Science</h3><p>Garden City University, Bengaluru, India, 2022 to 2024</p></div>
+    <div><h3>B.Sc. Forensic Science</h3><p>Jain University, Bengaluru, India, 2019 to 2022</p></div>
+  </div>
+  <p style="margin-top:2rem;max-width:42rem;color:var(--muted)">Ongoing practice on CyberDefenders and TryHackMe: network forensics, threat intelligence and exploitation walkthroughs.</p>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <p>Open to SOC, threat detection and security analyst roles. The fastest way to reach me is email.</p>
+  <div class="btns">
+    <a class="btn primary" href="mailto:alinaprem1011@gmail.com">alinaprem1011@gmail.com</a>
+    <a class="btn" href="https://linkedin.com/in/alina-prem" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/hack2Alina" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">Alina Prem, Abu Dhabi, UAE</div></footer>
+</body>
+</html>
